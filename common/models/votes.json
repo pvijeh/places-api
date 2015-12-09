@@ -1,0 +1,38 @@
+{
+  "name": "Votes",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "userId": {
+      "type": "number",
+      "id": false
+    },
+    "venueId": {
+      "type": "number"
+    },
+    "dateAdded": {
+      "type": "date"
+    },
+    "dateModified": {
+      "type": "date"
+    },
+    "value": {
+      "type": "number",
+      "comments": "value of 1 or 0"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "api": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "api",
+    "password": "@450West",
+    "name": "api",
+    "connector": "postgresql",
+    "user": "pvijeh"
+  }
+}

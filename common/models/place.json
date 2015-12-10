@@ -1,24 +1,31 @@
 {
-  "name": "Appuser",
-  "base": "User",
+  "name": "Place",
+  "base": "PersistedModel",
   "strict": false,
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
+    "Name": {
+      "type": "string"
+    },
+    "Id": {
       "type": "number",
       "id": true,
       "required": true,
       "index": true
-    },
-    "userName": {
-      "type": "string"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "users":{
+      "type" : "HasMany",
+      "model" : "Place", 
+      "foreignKey" : "UserId", 
+      "through" : "Vote" 
+    }
+    },
   "acls": [],
   "methods": {}
 }

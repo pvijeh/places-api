@@ -32,27 +32,29 @@
     "dataSource": "db",
     "public": false
   },
-  "Appuser": {
-    "dataSource": "api",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
   "VoteCategory": {
     "dataSource": "api",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
-  "Places": {
+  "AppUser": {
     "dataSource": "api",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
-  "Votes": {
-    "dataSource": "db",
-    "public": true
+  "Place": {
+    "dataSource": "api",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Vote": {
+    "dataSource": "api",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "Asset": {
     "dataSource": "api",

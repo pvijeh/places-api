@@ -1,0 +1,21 @@
+{
+  "name": "AppUser",
+  "base": "User",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "places":{
+      "type" : "HasMany",
+      "model" : "Place", 
+      "foreignKey" : "UserId", 
+      "through" : "Vote" 
+    }
+    },
+  "acls": [],
+  "methods": {}
+}

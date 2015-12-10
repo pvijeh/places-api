@@ -1,5 +1,5 @@
 {
-  "name": "Votes",
+  "name": "Vote",
   "base": "PersistedModel",
   "strict": false,
   "idInjection": false,
@@ -7,16 +7,13 @@
     "validateUpsert": true
   },
   "properties": {
-    "isVotedFor": {
+    "Is-Yes": {
       "type": "boolean"
     },
-    "VoteCat_ID": {
+    "VoteCatId": {
       "type": "number"
     },
-    "Place_ID": {
-      "type": "number"
-    },
-    "User_ID": {
+    "PlaceId": {
       "type": "number"
     },
     "DateAdded": {
@@ -24,6 +21,15 @@
     },
     "DateModified": {
       "type": "date"
+    },
+    "UserId": {
+      "type": "number"
+    },
+    "Id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
     }
   },
   "validations": [],

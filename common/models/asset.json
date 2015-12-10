@@ -7,8 +7,8 @@
     "validateUpsert": true
   },
   "properties": {
-    "Place_ID": {
-      "type": "number"
+    "PlaceId": {
+      "type": "string"
     },
     "AssetUrl": {
       "type": "string"
@@ -19,17 +19,26 @@
     "Credit": {
       "type": "string"
     },
-    "Alt": {
-      "type": "string"
-    },
     "Description": {
       "type": "string"
     },
     "Width": {
-      "type": "number"
+      "type": "string"
     },
     "Height": {
-      "type": "number"
+      "type": "string"
+    },
+    "Alt": {
+      "type": "string",
+      "id": false,
+      "required": false,
+      "index": false
+    },
+    "Id": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": true
     }
   },
   "validations": [],

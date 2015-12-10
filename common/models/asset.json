@@ -7,8 +7,14 @@
     "validateUpsert": true
   },
   "properties": {
+    "Id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "index": true
+    },
     "PlaceId": {
-      "type": "string"
+      "type": "number"
     },
     "AssetUrl": {
       "type": "string"
@@ -19,30 +25,27 @@
     "Credit": {
       "type": "string"
     },
+    "Alt": {
+      "type": "string"
+    },
     "Description": {
       "type": "string"
     },
     "Width": {
-      "type": "string"
+      "type": "number"
     },
     "Height": {
-      "type": "string"
-    },
-    "Alt": {
-      "type": "string",
-      "id": false,
-      "required": false,
-      "index": false
-    },
-    "Id": {
-      "type": "string",
-      "id": true,
-      "required": true,
-      "index": true
+      "type": "number"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "place": {
+      "type": "belongsTo",
+      "model": "Place",
+      "foreignKey": "PlaceId"
+    }
+    },
   "acls": [],
   "methods": {}
 }

@@ -18,7 +18,19 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "places": {
+      "type": "hasMany",
+      "model": "Place",
+      "foreignKey": "VoteCatId",
+      "through": "Vote"
+    },
+    "votes": {
+      "type": "hasMany",
+      "model": "Vote",
+      "foreignKey": "VoteCatId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

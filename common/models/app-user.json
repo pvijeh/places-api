@@ -9,13 +9,18 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "places":{
-      "type" : "hasMany",
-      "model" : "Place", 
-      "foreignKey" : "UserId", 
-      "through" : "Vote" 
-    }
+    "places": {
+      "type": "hasMany",
+      "model": "Place",
+      "foreignKey": "UserId",
+      "through": "Vote"
     },
+    "votes": {
+      "type": "hasMany",
+      "model": "Vote",
+      "foreignKey": "UserId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

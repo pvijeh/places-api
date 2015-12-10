@@ -43,8 +43,18 @@
       "type": "belongsTo",
       "model": "Place",
       "foreignKey": "PlaceId"
-    }
     },
+    "users": {
+      "type": "belongsTo",
+      "model": "AppUser",
+      "foreignKey": "UserId"
+    },
+    "vote-category": {
+      "type": "belongsTo",
+      "model": "VoteCategory",
+      "foreignKey": "VoteCatId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -33,7 +33,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "app-user": {
+      "type": "belongsTo",
+      "model": "AppUser",
+      "foreignKey": "UserId"
+    },
+    "place": {
+      "type": "belongsTo",
+      "model": "Place",
+      "foreignKey": "PlaceId"
+    }
+    },
   "acls": [],
   "methods": {}
 }

@@ -20,10 +20,15 @@
   "validations": [],
   "relations": {
     "users":{
-      "type" : "HasMany",
-      "model" : "Place", 
-      "foreignKey" : "UserId", 
+      "type" : "hasMany",
+      "model" : "AppUser", 
+      "foreignKey" : "PlaceId", 
       "through" : "Vote" 
+    },
+      "votes":{
+      "type" : "hasMany",
+      "model" : "Vote", 
+      "foreignKey" : "PlaceId" 
     }
     },
   "acls": [],

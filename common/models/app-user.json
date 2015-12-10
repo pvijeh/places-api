@@ -10,7 +10,7 @@
   "validations": [],
   "relations": {
     "places":{
-      "type" : "HasMany",
+      "type" : "hasMany",
       "model" : "Place", 
       "foreignKey" : "UserId", 
       "through" : "Vote" 

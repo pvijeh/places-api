@@ -7,28 +7,23 @@
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "number",
-      "id": true,
-      "required": true,
-      "index": true
+    "isVotedFor": {
+      "type": "boolean"
     },
-    "userId": {
-      "type": "number",
-      "id": false
-    },
-    "venueId": {
+    "VoteCat_ID": {
       "type": "number"
     },
-    "dateAdded": {
+    "Place_ID": {
+      "type": "number"
+    },
+    "User_ID": {
+      "type": "number"
+    },
+    "DateAdded": {
       "type": "date"
     },
-    "dateModified": {
+    "DateModified": {
       "type": "date"
-    },
-    "value": {
-      "type": "number",
-      "comments": "value of 1 or 0"
     }
   },
   "validations": [],

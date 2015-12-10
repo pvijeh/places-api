@@ -32,37 +32,29 @@
     "dataSource": "db",
     "public": false
   },
-  "Venues": {
-    "dataSource": "api",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
-  "BestLists": {
-    "dataSource": "api",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
-  "Photos": {
-    "dataSource": "api",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
-  "CrowdType": {
-    "dataSource": "api",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
   "Appuser": {
     "dataSource": "api",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
+  "VoteCategory": {
+    "dataSource": "api",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Places": {
+    "dataSource": "api",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
   "Votes": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Asset": {
     "dataSource": "api",
     "public": true,
     "$promise": {},

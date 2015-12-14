@@ -12,8 +12,8 @@
   "facebook-login": {
     "provider": "facebook",
     "module": "passport-facebook",
-    "clientID": "{facebook-client-id-1}",
-    "clientSecret": "{facebook-client-secret-1}",
+    "clientID": "1148738598487902",
+    "clientSecret": "ba590bf9137a8131bf8f177b7bf2e6b2",
     "callbackURL": "/auth/facebook/callback",
     "authPath": "/auth/facebook",
     "callbackPath": "/auth/facebook/callback",
@@ -52,8 +52,8 @@
   "facebook-link": {
     "provider": "facebook",
     "module": "passport-facebook",
-    "clientID": "{facebook-client-id-2}",
-    "clientSecret": "{facebook-client-secret-2}",
+    "clientID": "1148738598487902",
+    "clientSecret": "ba590bf9137a8131bf8f177b7bf2e6b2",
     "callbackURL": "/link/facebook/callback",
     "authPath": "/link/facebook",
     "callbackPath": "/link/facebook/callback",

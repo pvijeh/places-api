@@ -4,7 +4,7 @@
       "loopback/common/models",
       "loopback/server/models",
       "../common/models",
-      "./models", 
+      "./models",
       "./node_modules/loopback-component-passport/lib/models"
     ],
     "mixins": [
@@ -21,11 +21,11 @@
     "dataSource": "db",
     "public": false
   },
-   "userCredential": {
+  "userCredential": {
     "dataSource": "db",
     "public": false
-    },
-    "userIdentity": {
+  },
+  "userIdentity": {
     "dataSource": "db",
     "public": false
   },

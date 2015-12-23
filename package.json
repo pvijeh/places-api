@@ -19,12 +19,15 @@
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
+    "loopback-component-passport": "^1.5.0",
     "loopback-connector-postgresql": "^2.4.0",
     "loopback-datasource-juggler": "^2.39.0",
-    "loopback-component-passport": "^1.5.0",
     "passport": "^0.3.2",
     "passport-facebook": "^1.0.3",
+    "passport-google-oauth": "^0.2.0",
+    "passport-local": "^1.0.0",
     "passport-oauth2": "^1.1.2",
+    "passport-twitter": "^1.0.3",
     "serve-favicon": "^2.0.1"
   },
   "devDependencies": {
@@ -34,5 +37,26 @@
     "type": "",
     "url": ""
   },
-  "description": "placesAPI"
+  "description": "placesAPI",
+  "bundleDependencies": [
+    "body-parser",
+    "compression",
+    "connect-ensure-login",
+    "cookie-parser",
+    "cors",
+    "errorhandler",
+    "express-flash",
+    "express-session",
+    "jade",
+    "loopback",
+    "loopback-boot",
+    "loopback-component-explorer",
+    "loopback-component-passport",
+    "loopback-connector-postgresql",
+    "loopback-datasource-juggler",
+    "passport",
+    "passport-facebook",
+    "passport-oauth2",
+    "serve-favicon"
+  ]
 }

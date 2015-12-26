@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    var make_users = [], 
+    make_places = [],
+    make_votes = [],
+    make_voteCats = []; 
+
+    var generateUsers = function (i, max){
+            while ( i < max)  {
+            make_randomString =  Math.random().toString(36).substring(7);
+
+            make_users.push({
+                id  :  i,
+                username :  make_randomString,
+                email : make_randomString+'@email.com',
+                password :  'hovergear'
+            }); 
+            ++i; 
+        }    
+    }
+
+
+    generateUsers(0, 100); 
+
+    var generatePlaces = function (i, max){
+            while ( i < max)  {
+
+            make_places.push({
+                id  :  i,
+                Category :  'category',
+                Address : 'address', 
+                GooglePlacesId :  12345918181,
+                Name : make_randomString =  'venue_'+i,
+                Neighborhood : 'neighborhood'
+            }); 
+
+            ++i; 
+        }    
+    }
+
+    generatePlaces(0, 50); 
+
+        var generateVotes = function (i, max){
+            var today = new Date();
+
+            while ( i < max)  {
+
+            make_votes.push({
+                Id  :  i,
+                placeId: Math.floor(Math.random() * (49 - 0)),
+                UserId : Math.floor(Math.random() * (49 - 0)),
+                VoteCatId: Math.floor(Math.random() * (19 - 0)),
+                votedFor:  true,
+                DateAdded : today.getDate(),
+                DateModified : today.getDate()
+            }); 
+            ++i; 
+        }    
+    }
+
+    generateVotes(0, 100); 
+    
+
+    
+
+    document.body.innerHTML = JSON.stringify(make_votes);;
+
+    </script>
+</body>
+</html>

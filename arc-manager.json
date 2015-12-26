@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "ManagerHost": 4,
+    "LoadBalancer": 1
+  },
+  "models": {
+    "ManagerHost": {
+      "f8b13a2e-3f3a-42e4-8198-abfe755378b2": "{\"id\":\"f8b13a2e-3f3a-42e4-8198-abfe755378b2\",\"host\":\"104.131.66.124\",\"port\":7777,\"actions\":[\"delete\",\"edit\"],\"protocol\":\"http\",\"created\":1450894332753,\"error\":{\"message\":\"connect ECONNREFUSED\"},\"errorType\":\"connection\",\"app\":null,\"processes\":null,\"$$hashKey\":\"object:279\",\"isHostProblem\":true}"
+    },
+    "LoadBalancer": {}
+  }
+}

@@ -21,6 +21,6 @@
       "foreignKey": "UserId"
     }
   },
-  "acls": [],
+  "acls": [ ],
   "methods": {}
 }

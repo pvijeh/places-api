@@ -15,19 +15,27 @@
     ]
   },
   "user": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "$promise": {},
+    "$resolved": true
   },
   "accessToken": {
     "dataSource": "db",
-    "public": false
+    "public": false,
+    "$promise": {},
+    "$resolved": true
   },
   "userCredential": {
     "dataSource": "db",
-    "public": false
+    "public": false,
+    "$promise": {},
+    "$resolved": true
   },
   "userIdentity": {
     "dataSource": "db",
-    "public": false
+    "public": false,
+    "$promise": {},
+    "$resolved": true
   },
   "ACL": {
     "dataSource": "db",

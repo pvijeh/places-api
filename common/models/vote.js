@@ -6,11 +6,16 @@ module.exports = function(Vote) {
     var getVoteCats = function (callback){
         Vote.app.models.VoteCategory.find({
         order: 'Id ASC' }, function(err, attributes) {
+
+        for (var i = 0, len = attributes.length; i < len; i++) {
+          attributes[i].count = 0; 
+        }
+
           callback(attributes);
       }); 
     }
 
-    // get place model data for target id
+    // this calls the place method and also send the data to the api route 
     var getPlace = function (id, dataPackage, callback){
         Vote.app.models.Place.find({
         where: {Id : id}},
@@ -30,16 +35,18 @@ module.exports = function(Vote) {
 
     Vote.find({where : {PlaceId : id }}, function(err, placeVotes) {
       if (err) return cb(err);
-
-
+ 
       var AddResultsFromVoteCats = function (attributes) {
 
-      var dataPackage = {
-        placeAttributes : attributes, 
-        votes : placeVotes 
-      }
+        for (var i = 0, len = placeVotes.length; i < len; i++) {
+          // console.log(placeVotes[i].VoteCatId);
+          attributes[placeVotes[i].VoteCatId].count++; 
+        }
 
-        // call get place -- then add place to datapackage then send datapackage to api route. 
+      var dataPackage = {
+        placeAttributes : attributes
+      }
+        
         getPlace(id, dataPackage, addResultsFromPlace); 
       }
 
@@ -47,6 +54,7 @@ module.exports = function(Vote) {
 
         dataPackage.place = place; 
 
+        // this cb function sends that data to the api route 
         cb(null, dataPackage);  
       } 
 

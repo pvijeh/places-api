@@ -1,3 +1,81 @@
+categories = [
+'visited',
+'favorited',
+
+'Know someone who works their ',
+'Make bottle service reservations',
+'Arrive early',
+'Easy door - everyone gets in ',
+'Tough door - plan in advance',
+'Bring girls',
+'Keep your group small',
+
+'Young professional types',
+'Models, moguls and movie stars',
+'Fashionable crowd',
+'Hip hop  / urban ',
+'International jet set ',
+'Casual ',
+'Upscale ',
+
+'Where models hangout',
+'Fashion conscious crowd',
+'Tough Door - hardest clubs in nyc to get into ',
+'Frequented by celebrities, movie stars and the famous ',
+'Best Monday Night Party in NYC',
+'Best Tuesday Night Party in NYC',
+'Best Wednesday Night Party in NYC',
+'Best Thursday Night Party in NYC',
+'Best Friday Night Party in NYC',
+'Best Saturday Night Party in NYC',
+'Best Sunday Night Party in NYC',
+'Best Rooftop Nightclubs and Lounges in NYC',
+'Best Rooftop Bar in NYC',
+'Best Meatpacking District Nightclubs',
+'Best Soho Nightclubs',
+'Best Lower East Side Nightclubs',
+'Best Nightclubs in Chelsea NYC',
+'Best Gay Nightclubs in NYC',
+'Best for bottle service ',
+'Best Lounge',
+'Best Nightclub',
+'House Music / EDM ',
+'Hip Hop',
+'Deep House ',
+'Best Nightclubs in Brooklyn',
+'Best Nightclubs in Williamsburg',
+'Most Exclusive Clubs in NYC',
+'Attractive Crowd',
+'Best Bars and Clubs for Hipsters in NYC',
+'Best Clubs in Murray Hill ',
+'Best Clubs for Recent College Grads',
+'Best bars in the  Lower East Side',
+'Best bars in Soho',
+'Best bars in the East Village',
+'Best bars in the West Village',
+'Best bars in chelsea',
+'Best bars in Gramercy ',
+'Best bars in mid town ',
+'best bars in the upper east side',
+'best bars in the upper west side',
+'best bars in battery park city',
+'best bars in nolita',
+'best bars in noho',
+'best bars in union square ',
+'best bars for a date in NYC',
+'best sports bars in NYC',
+'best cocktails in nyc ',
+'best mixology bars in NYC',
+'best dive bars in NYC',
+'Best singles bar',
+'hookup spot ',
+'best bars in williamsburg',
+'best bars in bushwick ',
+'best nightclubs in bushwick ',
+'best latin nightclubs',
+'best african american nightclubs',
+];
+
 module.exports = function(app) {
   var user = app.models.AppUser;
   var vote = app.models.Vote;
@@ -17,10 +95,10 @@ module.exports = function(app) {
   // place.destroyAll(); 
   // voteCat.destroyAll(); 
 
-    // var make_users = [], 
-    // make_places = [],
-    // make_votes = [],
-    // make_voteCats = []; 
+    // var make_users = []; 
+    // var make_places = [];
+    // var make_votes = [];
+    // var make_voteCats = []; 
 
     //
     // generates some user data 
@@ -91,7 +169,7 @@ module.exports = function(app) {
         //             Id  :  i,
         //             PlaceId: Math.floor(Math.random() * (49 - 0)),
         //             UserId : Math.floor(Math.random() * (49 - 0)),
-        //             VoteCatId: Math.floor(Math.random() * (19 - 0)),
+        //             VoteCatId: Math.floor(Math.random() * (72 - 0)),
         //             votedFor:  true,
         //             DateAdded : today.getDate(),
         //             DateModified : today.getDate()
@@ -100,7 +178,7 @@ module.exports = function(app) {
         //     }    
         // }
 
-        // generateVotes(0, 1000); 
+        // generateVotes(0, 10000); 
 
         // vote.create(make_votes, function(err, votes) {
         //   if (err) throw err;
@@ -120,13 +198,13 @@ module.exports = function(app) {
 
         //         make_voteCats.push({
         //             Id  :  i,
-        //             AttributeName : 'attribute'+ i
+        //             AttributeName : categories[i]
         //         }); 
         //         ++i; 
         //     }    
         // }
 
-        // generateVoteCat(0, 50); 
+        // generateVoteCat(0, categories.length); 
 
         // voteCat.create(make_voteCats, function(err, voteCats) {
         //   if (err) throw err;
@@ -134,7 +212,5 @@ module.exports = function(app) {
         // });
   
 //////////////////////////////// end generate places ////////////////////////////////////////
-
-
 
 };

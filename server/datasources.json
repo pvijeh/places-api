@@ -8,7 +8,7 @@
     "port": 5432,
     "url": "",
     "database": "api",
-    "password": "KERBpwsblow1",
+    "password": "@450West",
     "name": "api",
     "connector": "postgresql",
     "user": "pvijeh"

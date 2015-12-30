@@ -1,11 +1,11 @@
 {
   "ids": {
-    "ManagerHost": 4,
+    "ManagerHost": 7,
     "LoadBalancer": 1
   },
   "models": {
     "ManagerHost": {
-      "f8b13a2e-3f3a-42e4-8198-abfe755378b2": "{\"id\":\"f8b13a2e-3f3a-42e4-8198-abfe755378b2\",\"host\":\"104.131.66.124\",\"port\":7777,\"actions\":[\"delete\",\"edit\"],\"protocol\":\"http\",\"created\":1450894332753,\"error\":{\"message\":\"connect ECONNREFUSED\"},\"errorType\":\"connection\",\"app\":null,\"processes\":null,\"$$hashKey\":\"object:279\",\"isHostProblem\":true}"
+      "b52d78db-dcfb-4cdf-9e4a-ade0dd71f203": "{\"id\":\"b52d78db-dcfb-4cdf-9e4a-ade0dd71f203\",\"host\":\"104.131.179.151\",\"port\":8701,\"actions\":[\"delete\",\"edit\"],\"protocol\":\"http\",\"created\":1451505750014,\"error\":{\"message\":\"read ECONNRESET\"},\"errorType\":\"unknown\",\"app\":null,\"processes\":null}"
     },
     "LoadBalancer": {}
   }

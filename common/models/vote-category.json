@@ -15,6 +15,15 @@
       "id": true,
       "required": true,
       "index": true
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Route": {
+      "type": "string"
+    },
+    "VenueIcon": {
+      "type": "string"
     }
   },
   "validations": [],

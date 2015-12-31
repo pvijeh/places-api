@@ -198,9 +198,9 @@ module.exports = function(app) {
             make_voteCats.push({
                 Id  :  i,
                 AttributeName : categories[i],
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui.',
-                route: 'category-route-'+[i],
-                venueIcon: 'icon'
+                Description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui.',
+                Route: 'category-route-'+[i],
+                VenueIcon: 'icon'
             }); 
 
             ++i; 

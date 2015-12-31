@@ -93,12 +93,12 @@ module.exports = function(app) {
   // user.destroyAll(); 
   // vote.destroyAll(); 
   // place.destroyAll(); 
-  // voteCat.destroyAll(); 
+  voteCat.destroyAll(); 
 
     // var make_users = []; 
     // var make_places = [];
     // var make_votes = [];
-    // var make_voteCats = []; 
+    var make_voteCats = []; 
 
     //
     // generates some user data 
@@ -160,56 +160,60 @@ module.exports = function(app) {
 //  generate vote data 
 //
 
-        //    var generateVotes = function (i, max){
-        //         var today = new Date();
+    //    var generateVotes = function (i, max){
+    //         var today = new Date();
 
-        //         while ( i < max)  {
+    //         while ( i < max)  {
 
-        //         make_votes.push({
-        //             Id  :  i,
-        //             PlaceId: Math.floor(Math.random() * (49 - 0)),
-        //             UserId : Math.floor(Math.random() * (49 - 0)),
-        //             VoteCatId: Math.floor(Math.random() * (72 - 0)),
-        //             votedFor:  true,
-        //             DateAdded : today.getDate(),
-        //             DateModified : today.getDate()
-        //         }); 
-        //         ++i; 
-        //     }    
-        // }
+    //         make_votes.push({
+    //             Id  :  i,
+    //             PlaceId: Math.floor(Math.random() * (49 - 0)),
+    //             UserId : Math.floor(Math.random() * (49 - 0)),
+    //             VoteCatId: Math.floor(Math.random() * (72 - 0)),
+    //             votedFor:  true,
+    //             DateAdded : today.getDate(),
+    //             DateModified : today.getDate()
+    //         }); 
+    //         ++i; 
+    //     }    
+    // }
 
-        // generateVotes(0, 10000); 
+    // generateVotes(0, 10000); 
 
-        // vote.create(make_votes, function(err, votes) {
-        //   if (err) throw err;
-        //   console.log('Created votes:', votes);
-        // });
+    // vote.create(make_votes, function(err, votes) {
+    //   if (err) throw err;
+    //   console.log('Created votes:', votes);
+    // });
   
 //////////////////////////////// end generate places ////////////////////////////////////////
-
 
 // 
 //  generate vote category data 
 //
 
-        //    var generateVoteCat = function (i, max){
+       var generateVoteCat = function (i, max){
 
-        //         while ( i < max)  {
+            while ( i < max)  {
 
-        //         make_voteCats.push({
-        //             Id  :  i,
-        //             AttributeName : categories[i]
-        //         }); 
-        //         ++i; 
-        //     }    
-        // }
+            make_voteCats.push({
+                Id  :  i,
+                AttributeName : categories[i],
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui.',
+                route: 'category-route-'+[i],
+                venueIcon: 'icon'
+            }); 
 
-        // generateVoteCat(0, categories.length); 
+            ++i; 
 
-        // voteCat.create(make_voteCats, function(err, voteCats) {
-        //   if (err) throw err;
-        //   console.log('Created votes:', voteCats);
-        // });
+        }    
+    }
+
+    generateVoteCat(0, categories.length); 
+
+    voteCat.create(make_voteCats, function(err, voteCats) {
+      if (err) throw err;
+      console.log('Created votes:', voteCats);
+    });
   
 //////////////////////////////// end generate places ////////////////////////////////////////
 

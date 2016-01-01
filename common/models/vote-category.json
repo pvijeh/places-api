@@ -22,9 +22,18 @@
     "Route": {
       "type": "string"
     },
-    "VenueIcon": {
+    "CategoryIcon": {
       "type": "string"
-    }
+    },
+    "Neighborhood": {
+      "type": "string"
+    },
+    "VenueType": {
+      "type": "string"
+    },
+    "PageTitle": {
+      "type": "string"
+    },
   },
   "validations": [],
   "relations": {

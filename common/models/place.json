@@ -19,13 +19,16 @@
     "GooglePlacesId": {
       "type": "string"
     },
-    "Category": {
-      "type": "string"
-    },
     "Neighborhood": {
       "type": "string"
     },
     "Address": {
+      "type": "string"
+    },
+    "Route": {
+      "type": "string"
+    }, 
+    "VenueType": {
       "type": "string"
     }
   },

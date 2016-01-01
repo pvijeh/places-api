@@ -33,7 +33,7 @@
     },
     "PageTitle": {
       "type": "string"
-    },
+    }
   },
   "validations": [],
   "relations": {

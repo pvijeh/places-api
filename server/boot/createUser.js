@@ -92,12 +92,12 @@ module.exports = function(app) {
 
   // user.destroyAll(); 
   // vote.destroyAll(); 
-  // place.destroyAll(); 
+  place.destroyAll(); 
   voteCat.destroyAll(); 
 
     // var make_users = []; 
-    // var make_places = [];
     // var make_votes = [];
+    var make_places = [];
     var make_voteCats = []; 
 
     //
@@ -131,27 +131,30 @@ module.exports = function(app) {
 //  generates some place data 
 //
 
-        // var generatePlaces = function (i, max){
-        //         while ( i < max)  {
+        var generatePlaces = function (i, max){
+                while ( i < max)  {
 
-        //         make_places.push({
-        //             Id  :  i,
-        //             Category :  'category',
-        //             Address : 'address', 
-        //             GooglePlacesId :  12345918181,
-        //             Name : make_randomString =  'venue_'+i,
-        //             Neighborhood : 'neighborhood'
-        //         }); 
-        //         ++i; 
-        //     }    
-        // }
+                make_places.push({
+                    Id  :  i,
+                    Category :  'category',
+                    Address : 'address', 
+                    GooglePlacesId :  12345918181,
+                    Name : make_randomString =  'venue_'+i,
+                    Neighborhood : 'neighborhood',
+                    Address : '123 Fake Street',
+                    Route : 'venue_'+i,
+                    VenueType : 'Nightclub' 
+                }); 
+                ++i; 
+            }    
+        }
         
-        // generatePlaces(0, 50); 
+        generatePlaces(0, 50); 
 
-        // place.create(make_places, function(err, places) {
-        //   if (err) throw err;
-        //   console.log('Created places:', places);
-        // });
+        place.create(make_places, function(err, places) {
+          if (err) throw err;
+          console.log('Created places:', places);
+        });
   
 //////////////////////////////// end generate places ////////////////////////////////////////
 
@@ -191,20 +194,23 @@ module.exports = function(app) {
 //  generate vote category data 
 //
 
-       var generateVoteCat = function (i, max){
+   var generateVoteCat = function (i, max){
+        
+        while ( i < max)  {
 
-            while ( i < max)  {
-
-            make_voteCats.push({
-                Id  :  i,
-                AttributeName : categories[i],
-                Description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui.',
-                Route: 'category-route-'+[i],
-                VenueIcon: 'icon'
-            }); 
-
-            ++i; 
-
+        make_voteCats.push({
+            Id  :  i,
+            AttributeName : categories[i],
+            Description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui.',
+            Route: 'category-route-'+[i],
+            CategoryIcon: 'fa fa-anchor',
+            Neighborhood: 'Chelsea', 
+            VenueType: 'Nightclub', 
+            PageTitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus.'
+        }); 
+        
+        ++i; 
+        
         }    
     }
 

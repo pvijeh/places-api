@@ -19,6 +19,9 @@
     "GooglePlacesId": {
       "type": "string"
     },
+    "Name": {
+      "type": "string"
+    },
     "Neighborhood": {
       "type": "string"
     },
@@ -27,7 +30,7 @@
     },
     "Route": {
       "type": "string"
-    }, 
+    },
     "VenueType": {
       "type": "string"
     }

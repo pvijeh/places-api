@@ -90,10 +90,10 @@ module.exports = function(app) {
 // clear data 
 //
 
-  user.destroyAll(); 
-  vote.destroyAll(); 
-  place.destroyAll(); 
-  voteCat.destroyAll(); 
+  // user.destroyAll(); 
+  // vote.destroyAll(); 
+  // place.destroyAll(); 
+  // voteCat.destroyAll(); 
 
     // var make_users = []; 
     // var make_votes = [];

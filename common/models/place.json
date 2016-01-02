@@ -19,9 +19,6 @@
     "GooglePlacesId": {
       "type": "string"
     },
-    "Name": {
-      "type": "string"
-    },
     "Neighborhood": {
       "type": "string"
     },

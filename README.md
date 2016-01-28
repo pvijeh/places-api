@@ -1,4 +1,4 @@
-# What does this app do?
+# What does this app do? (currently under development) 
 
 this is a REST API built using StrongLoop, LoopBack.js (which sits on top of Express.js) and PostgreSQL.  The api is build to interface with an Isomorphic React.js app which will ultimately be a local discovery web app for bars, lounges and nightclubs using a tag based voting system inspired by design patterns used in these sites (http://stackshare.io/, http://www.slant.co/, https://www.producthunt.com/, http://stackoverflow.com/) 
 
